@@ -4,18 +4,17 @@ using UnityEngine.UI;
 public class Compass2D : MonoBehaviour
 {
     [Tooltip("Player")]
-    [SerializeField] private GameObject _player;
-
-    [Tooltip("Image")]
-    [SerializeField] private Image _compassImage;
+    [SerializeField] private GameObject _playerOrientation;
 
     [Tooltip("North")]
     [SerializeField] private Vector3 _worldNorth = Vector3.forward;
 
     Vector3 _orientationToAngle = new Vector3(0, 0, 0);
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void Start()
     {
+        if(_playerOrientation == null)
+            _playerOrientation = GameObject.FindGameObjectWithTag("PlayerOrientation");
     }
 
     // Update is called once per frame
@@ -32,7 +31,13 @@ public class Compass2D : MonoBehaviour
         //Vector3 orientationToAngle = _player.transform.rotation.eulerAngles;
         //_orientationToAngle.z = orientationToAngle.y;
 
-        _orientationToAngle.z = _player.transform.rotation.eulerAngles.z;
-        transform.rotation = Quaternion.Euler(_orientationToAngle);
+
+        transform.rotation = CalculateAndGetCompassAngle();
+    }
+
+    protected Quaternion CalculateAndGetCompassAngle()
+    {
+        _orientationToAngle.z = _playerOrientation.transform.rotation.eulerAngles.y;
+        return Quaternion.Euler(_orientationToAngle);
     }
 }

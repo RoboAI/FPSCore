@@ -45,8 +45,17 @@ namespace Ilumisoft.RadarSystem
         /// </summary>
         public GameObject Player;
 
+        public Dictionary<LocatableIconComponent, RectTransform> _rectTransforms;
+
+        private void Start()
+        {
+        }
+
         private void OnEnable()
         {
+            if (_rectTransforms == null)
+                _rectTransforms = new Dictionary<LocatableIconComponent, RectTransform>();
+
             LocatableManager.OnLocatableAdded += OnLocatableAdded;
             LocatableManager.OnLocatableRemoved += OnLocatableRemoved;
         }
@@ -71,6 +80,8 @@ namespace Ilumisoft.RadarSystem
                 icon.transform.SetParent(iconContainer.transform, false);
 
                 locatableIconDictionary.Add(locatable, icon);
+
+                _rectTransforms.Add(icon, icon.GetComponent<RectTransform>());
             }
         }
 
@@ -84,6 +95,8 @@ namespace Ilumisoft.RadarSystem
             if (locatable != null && locatableIconDictionary.TryGetValue(locatable, out LocatableIconComponent icon))
             {
                 locatableIconDictionary.Remove(locatable);
+
+                _rectTransforms.Remove(icon);
 
                 Destroy(icon.gameObject);
             }
@@ -112,7 +125,8 @@ namespace Ilumisoft.RadarSystem
                     {
                         icon.SetVisible(true);
 
-                        var rectTransform = icon.GetComponent<RectTransform>();
+                        //var rectTransform = icon.GetComponent<RectTransform>();
+                        _rectTransforms.TryGetValue(icon, out var rectTransform);
 
                         rectTransform.anchoredPosition = iconLocation;
                     }

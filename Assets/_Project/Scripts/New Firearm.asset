@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ee099bf388b684a82d6b44291759ae, type: 3}
+  m_Name: New Firearm
+  m_EditorClassIdentifier: 
+  replacement: {fileID: 0}
+  firearmHud: {fileID: 0}
+  crosshair: {fileID: 0}
+  shootingMechanism: 1
+  shootingDirection: 2
+  fireMode: 0
+  casingDirection: 2
+  hittableLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  projectile: {fileID: 0}
+  casing: {fileID: 0}
+  defaultDecal: {fileID: 0}
+  decalDirection: 0
+  fireRate: 833
+  muzzleVelocity: 250
+  casingVelocity: 10
+  impactForce: 10
+  damage: 20
+  range: 300
+  maxAimDeviation: 1
+  sprayPattern: {fileID: 0}
+  aimSprayPattern: {fileID: 0}
+  fireTransition: 0.1
+  restrictedAnimations:
+  - Recharging
+  tracerRounds: 1
+  projectileSize: 0.01
+  decalSize: 1
+  shotCount: 1
+  shotDelay: 0
+  alwaysApplyFire: 0
+  gamepadVibrationAmountRight: 1
+  gamepadVibrationAmountLeft: 1
+  gamepadVibrationDuration: 0.1
+  ammoType: {fileID: 0}
+  magazineCapacity: 30
+  reserve: 0
+  canAutomaticallyReload: 1
+  reloadMethod: 0
+  reloadTime: 1.6
+  emptyReloadTime: 2.13
+  reloadStateName: Reload
+  reloadTransitionTime: 0.3
+  canCancelReloading: 1
+  cameraRecoil: 1
+  cameraShakeAmount: 0.05
+  cameraShakeRoughness: 5
+  cameraShakeStartTime: 0.1
+  cameraShakeDuration: 0.1
+  horizontalRecoil: 0.7
+  verticalRecoil: 0.1
+  aimSpeed: 10
+  aimFieldOfView: 50
+  aimWeaponFieldOfview: 40
+  basePlayerSpeed: 1
+  aimWalkPlayerSpeed: 0.5
+  fireWalkPlayerSpeed: 0.4
+  fireSound: {fileID: 0}
+  fireTailSound: {fileID: 0}
+  reloadSound: {fileID: 0}
+  reloadEmptySound: {fileID: 0}
+  isFireActive: 1
+  isRecoilActive: 1
+  isCharacterActive: 1
+  isAudioActive: 1

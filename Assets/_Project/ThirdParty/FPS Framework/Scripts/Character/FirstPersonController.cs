@@ -155,13 +155,18 @@ namespace Akila.FPSFramework
             Actor = GetComponent<Actor>();
             cameraManager = GetComponentInChildren<CameraManager>();
 
-
-
             if (GetComponentInChildren<IInventory>() != null) GetComponentInChildren<IInventory>().characterManager = characterManager;
 
-            if (transform.Find("Orientation") != null)
+            GameObject goOrientation = GameObject.FindGameObjectWithTag("PlayerOrientation");
+
+            //if (transform.Find("Orientation") != null)
+            if(SceneGlobals.Instance._player != null)
             {
-                Orientation = transform.Find("Orientation");
+                Orientation = SceneGlobals.Instance._player._orientation.transform;
+            }
+            else if (goOrientation)
+            {
+                Orientation = goOrientation.transform;
             }
             else
             {

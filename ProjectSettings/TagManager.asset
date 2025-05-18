@@ -4,10 +4,16 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Stair
+  - WallRun
+  - Climb
+  - Fly
   - Laser Line
   - PlayerOrientation
   - SceneGlobals
   - MainActor
+  - Animal
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -29,17 +35,17 @@ TagManager:
   - 
   - 
   - 
+  - Animal
+  - 
+  - 
+  - Enemy
   - 
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Item
   - 
   m_SortingLayers:
   - name: Default

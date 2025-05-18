@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,11 @@ public class CompassStrip : Compass2D
     [Tooltip("Compass strip image")]
     [SerializeField]
     private Image _stripImage;
+
+    [Tooltip("Degrees Text")]
+    [SerializeField]
+    private TextMeshProUGUI _textDegrees;
+    private float _degreesClampBuffer;
 
     private Vector2 _textureOffset;
     private float _stripDegressRatio = 1 / 360.0f;
@@ -29,8 +35,12 @@ public class CompassStrip : Compass2D
 
     private void Update()
     {
-        _textureOffset.x = CalculateAndGetCompassAngle().eulerAngles.z * _stripDegressRatio;
+        _degreesClampBuffer = CalculateAndGetCompassAngle().eulerAngles.z;
+        _textureOffset.x = _degreesClampBuffer * _stripDegressRatio;
         _stripImage.material.mainTextureOffset = _textureOffset;
+
+        //_degreesClampBuffer = 
+        _textDegrees.text = Mathf.RoundToInt(_degreesClampBuffer).ToString() + "\u00B0";
 
         //Debug.Log(CalculateAndGetCompassAngle().eulerAngles);
 

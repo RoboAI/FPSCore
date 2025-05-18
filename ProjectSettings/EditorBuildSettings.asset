@@ -9,19 +9,19 @@ EditorBuildSettings:
     path: Assets/_Project/Scenes/FPSTest.unity
     guid: f5a4d064aa6e0904bad52e13a2c44c74
   - enabled: 0
-    path: Assets/_Project/ThirdParty/FPS Framework/Scenes/Demo.unity
+    path: Assets/Thirdparty/FPS Framework/Scenes/Demo.unity
     guid: c604dab8d2dc4c845b0a15de6b5edc02
   - enabled: 0
     path: Assets/_Project/Scenes/FPSSamlpleWithEnvironment.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/_Project/ThirdParty/PolygonPirates/Scenes/Demo.unity
+    path: Assets/Thirdparty/PolygonPirates/Scenes/Demo.unity
     guid: bfa5d56a0eb50f04ba05cb6891c91214
   - enabled: 0
-    path: Assets/_Project/ThirdParty/FPS Framework/Scenes/Main Menu.unity
+    path: Assets/Thirdparty/FPS Framework/Scenes/Main Menu.unity
     guid: ac101b9ed944cf947b30259ece7eb5aa
   - enabled: 0
-    path: Assets/_Project/ThirdParty/FPS Framework/Scenes/Loading.unity
+    path: Assets/Thirdparty/FPS Framework/Scenes/Loading.unity
     guid: 75e5571c0de96ac4a84aadc041f9d80e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fe0ad163545f89b47813a7b41af4a66a,

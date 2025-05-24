@@ -3,14 +3,17 @@ using UnityEngine;
 
 public class UIManager2 : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _textFPS;
+    private void Start()
+    {
+        Debug.Log($"Before: {Application.targetFrameRate}, {QualitySettings.vSyncCount}");
 
-    private float _previousTime;
-    private int _calculatedFPS;
+        Application.targetFrameRate = -1;
+        QualitySettings.vSyncCount = 0;
+
+        Debug.Log($"After: {Application.targetFrameRate}, {QualitySettings.vSyncCount}");
+    }
 
     private void Update()
     {
-        _calculatedFPS = (int)(1 / Time.deltaTime);
-        _textFPS.text = _calculatedFPS.ToString();
     }
 }

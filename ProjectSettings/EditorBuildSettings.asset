@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Project/Scenes/PiratesDemo.unity
+    guid: 3b9075e999be1524cba5b4fa3756004d
+  - enabled: 0
+    path: Assets/_Project/Scenes/SyntyController.unity
+    guid: b11938cb9c5ddb748a776b3973eb5685
+  - enabled: 0
     path: Assets/_Project/Scenes/FPSTest.unity
     guid: f5a4d064aa6e0904bad52e13a2c44c74
   - enabled: 0

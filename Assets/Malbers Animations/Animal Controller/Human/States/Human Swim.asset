@@ -118,7 +118,7 @@ MonoBehaviour:
   ID: {fileID: 11400000, guid: 7e364e53b77644c47aa3abdaa2e2c08c, type: 2}
   EnterConditions:
     conditions: []
-  AllowExitConditions:
+  ExitConditions:
     conditions: []
   WaterLayer:
     serializedVersion: 2

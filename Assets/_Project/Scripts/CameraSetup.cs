@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class CameraSetup : MonoBehaviour
 {
-    public bool _bDisableOnStartup;
+    public bool _disableOnStartup;
 
     void Start()
     {
-        gameObject.SetActive(!_bDisableOnStartup);
+        gameObject.SetActive(!_disableOnStartup);
     }
 }

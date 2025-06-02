@@ -13,11 +13,14 @@ public class BoatController : MonoBehaviour
     [SerializeField] float _currentSailingSpeed;
     float _timePassed;
     [SerializeField] float _lerpSailSpeed;
+    [SerializeField] Camera _boatCamera;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-   
+        Vector3 boatWorldPosition = _splineFollower.GetSplineWorldPositionAtT(0);
+        Vector3 excludeYAxis = new Vector3(boatWorldPosition.x, transform.position.y, boatWorldPosition.z);
+        transform.position = excludeYAxis;
     }
 
     private void Update()
@@ -25,6 +28,11 @@ public class BoatController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             SailBoat(!_boatSailing);
+        }
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            _boatCamera.enabled = !_boatCamera.enabled;
         }
     }
 
@@ -34,10 +42,22 @@ public class BoatController : MonoBehaviour
         if(_boatSailing && _currentSailingSpeed < _targetSailingSpeed)
         {
             _timePassed += Time.deltaTime * _lerpSailSpeed;
-            
-            _currentSailingSpeed = Mathf.Lerp(_currentSailingSpeed, _targetSailingSpeed, Time.deltaTime * _lerpSailSpeed);
+            float splinePosition = _splineFollower.GetCurrentSplinePosition();
+
+            if (splinePosition < 0.9f)
+            {
+                _currentSailingSpeed = Mathf.Lerp(_currentSailingSpeed, _targetSailingSpeed, Time.deltaTime * _lerpSailSpeed);
+                _splineFollower.SetSpeed(_currentSailingSpeed);
+            }
+
+            else if(splinePosition >= 0.9f)
+            {
+                if(splinePosition < 0.97f)
+                    _currentSailingSpeed = Mathf.Lerp(_currentSailingSpeed, 0, (Time.deltaTime * (_lerpSailSpeed * 500)));
+
+                _splineFollower.SetSpeed(_currentSailingSpeed);
+            }
         }
-        
     }
 
     public void SailBoat(bool sail)

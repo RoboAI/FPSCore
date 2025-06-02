@@ -45,4 +45,26 @@ public class SplineFollower : MonoBehaviour
     {
         _followSpline = sail;
     }
+
+    public float GetCurrentSplinePosition()
+    {
+        return _currentSplinePos;
+    }
+
+    public Vector3 GetSplineWorldPositionAtT(float t)
+    {
+        Vector3 localPos = _splineContainer.Spline.EvaluatePosition(t);
+        return _splineContainer.transform.TransformPoint(localPos);
+    }
+
+    public Vector3 GetSplineCurrentWorldPosition()
+    {
+        return GetSplineWorldPositionAtT(_currentSplinePos);
+    }
+
+    public Vector3 GetWorldForwardAtT(float t)
+    {
+        Vector3 localTangent = _splineContainer.Spline.EvaluateTangent(t);
+        return _splineContainer.transform.TransformDirection(localTangent.normalized);
+    }
 }

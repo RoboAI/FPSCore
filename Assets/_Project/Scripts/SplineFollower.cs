@@ -7,10 +7,10 @@ public class SplineFollower : MonoBehaviour
 {
     [SerializeField] SplineContainer _splineContainer;
 
-    [SerializeField] bool _sail;
-    [SerializeField] float _speed;
+    [SerializeField] bool _followSpline;
+    [SerializeField] public float _speed;
     [SerializeField] float _currentSplinePos;
-    [SerializeField] float _timePassed;
+    //float _timePassed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,10 +19,10 @@ public class SplineFollower : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_splineContainer == null || _sail == false)
+        if (_splineContainer == null || _followSpline == false)
             return;
 
-        _timePassed += Time.deltaTime;
+        //_timePassed += Time.deltaTime;
         _currentSplinePos += Time.deltaTime * _speed;
 
         Vector3 localPos = _splineContainer.Spline.EvaluatePosition(_currentSplinePos);
@@ -41,8 +41,8 @@ public class SplineFollower : MonoBehaviour
         _speed = speed;
     }
 
-    public void Sail(bool sail)
+    public void FollowSpline(bool sail)
     {
-        _sail = sail;
+        _followSpline = sail;
     }
 }

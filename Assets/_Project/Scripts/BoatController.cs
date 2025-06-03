@@ -13,14 +13,17 @@ public class BoatController : MonoBehaviour
     [SerializeField] float _currentSailingSpeed;
     float _timePassed;
     [SerializeField] float _lerpSailSpeed;
-    [SerializeField] Camera _boatCamera;
+    [SerializeField] CameraArrayHandler _boatCameras;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Vector3 boatWorldPosition = _splineFollower.GetSplineWorldPositionAtT(0);
-        Vector3 excludeYAxis = new Vector3(boatWorldPosition.x, transform.position.y, boatWorldPosition.z);
-        transform.position = excludeYAxis;
+        transform.position = new Vector3(boatWorldPosition.x, transform.position.y, boatWorldPosition.z);//exclude y-axis
+
+        Vector3 worldForward = _splineFollower.GetWorldForwardAtT(0.0001f);
+        //transform.rotation = Quaternion.Euler(worldForward);
+        transform.rotation = Quaternion.LookRotation(worldForward, Vector3.up);
     }
 
     private void Update()
@@ -28,11 +31,6 @@ public class BoatController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             SailBoat(!_boatSailing);
-        }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            _boatCamera.enabled = !_boatCamera.enabled;
         }
     }
 

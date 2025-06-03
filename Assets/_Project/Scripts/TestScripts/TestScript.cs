@@ -16,8 +16,7 @@ public class TestScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            _active = !_active;
-            radar.gameObject.SetActive(_active);
+            gameObject.GetComponent<Renderer>().enabled = false;
         }
     }
 }

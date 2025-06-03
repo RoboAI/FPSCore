@@ -25,15 +25,12 @@ public class SplineFollower : MonoBehaviour
         //_timePassed += Time.deltaTime;
         _currentSplinePos += Time.deltaTime * _speed;
 
-        Vector3 localPos = _splineContainer.Spline.EvaluatePosition(_currentSplinePos);
-        Vector3 localTangent = _splineContainer.Spline.EvaluateTangent(_currentSplinePos);
+        //set position as spline's current position
+        Vector3 worldPosition = GetSplineWorldPositionAtT(_currentSplinePos);
+        transform.position = new Vector3(worldPosition.x, transform.position.y, worldPosition.z);//exclude y-axis
 
-        Vector3 worldPosition = _splineContainer.transform.TransformPoint(localPos);
-        Vector3 worldForward = _splineContainer.transform.TransformDirection(localTangent.normalized);
-
-        Vector3 excludeYAxis = new Vector3(worldPosition.x, transform.position.y, worldPosition.z);
-        transform.position = excludeYAxis;
-        transform.rotation = Quaternion.LookRotation(worldForward, Vector3.up);
+        //set rotation as spline's current rotation
+        transform.rotation = Quaternion.LookRotation(GetWorldForwardAtT(_currentSplinePos), Vector3.up);
     }
 
     public void SetSpeed(float speed)
@@ -54,7 +51,8 @@ public class SplineFollower : MonoBehaviour
     public Vector3 GetSplineWorldPositionAtT(float t)
     {
         Vector3 localPos = _splineContainer.Spline.EvaluatePosition(t);
-        return _splineContainer.transform.TransformPoint(localPos);
+        Vector3 worldPos = _splineContainer.transform.TransformPoint(localPos);
+        return worldPos;
     }
 
     public Vector3 GetSplineCurrentWorldPosition()
@@ -65,6 +63,7 @@ public class SplineFollower : MonoBehaviour
     public Vector3 GetWorldForwardAtT(float t)
     {
         Vector3 localTangent = _splineContainer.Spline.EvaluateTangent(t);
-        return _splineContainer.transform.TransformDirection(localTangent.normalized);
+        Vector3 worldForward = _splineContainer.transform.TransformDirection(localTangent.normalized);
+        return worldForward;
     }
 }

@@ -14,7 +14,7 @@ using StopWatch = System.Diagnostics.Stopwatch;
 
 namespace Pinwheel.Poseidon
 {
-    //[ExecuteInEditMode]
+    [ExecuteInEditMode]
     public class PWater : MonoBehaviour
     {
         [SerializeField]

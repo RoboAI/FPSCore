@@ -1,41 +1,42 @@
-using UnityEngine;
 
-public class screenplay
-{
-/*
-	- zombie pirates taken over towns player tries to survive decides to save ppl too.
-	- player starts to build boat, upgrades boat to ship as progresses etc.
-	- player goes into battle with zombies. saves a few ppl. gets resources to upgrade ship.
-	- later realises that the zombies are not willing to kill hostages. player finds out how to cure them with a potion,
-		but its too late for some of them so player is always under attack.
+- zombie pirates taken over towns. player tries to survive and decides to save ppl too.
+- player starts to build boat, upgrades boat to ship as they progress etc.
+- player goes into battle with zombies. saves a few ppl. gets resources to upgrade ship.
+- later realises that the zombies are not willing to kill hostages. player finds out how to cure them with a potion,
+	but its too late for some of them so player is always under attack.
+- hot air balloons passes by, can be shot down for air packages
+- player has a companion eagle, used as radar. bird will call direciton for main boss (every 2 seconds for 10seconds maybe):
+	north 1 call, east 2 quick-calls, etc
 
-	game starts:
-		- player is on a hot air baloon cruising. baloon gets shot down, player wakes up on a small island with
-		a broken boat and few resources. fixes the boat.
-		- a bit exploration time for player. 
+//future upgrades
+- hot air baloon passes by carrying tourists, baloon gets shot down (no one knows who but we see an arrow pierce it),
+	tourists land on home-island, players recruit. every few heists a balloon gets shot down for recruit.
+
+game starts:
+	- player is on a hot air baloon cruising. baloon gets shot down, player wakes up on a small island with
+	a broken boat and few resources. fixes the boat.
+	- a bit exploration time for player. 
 	
-	player's first controls:
-		- sails to nearby small island. encounters first zombies, defeats zombies with stones. finds sword. comes back 
-		upgrades boat with new resources.
+player's first controls:
+	- sails to nearby small island. encounters first zombies, defeats zombies with stones. finds sword. comes back 
+	upgrades boat with new resources.
 
-	next new small island:
-		- player explores how to use sword etc by defeating more zombies. gets resources, finds a tough string.
-		- comes back home, builds a small hut with a ladder.
-		- also builds a bow with the found string.
+next new small island:
+	- player explores how to use sword etc by defeating more zombies. gets resources, finds a tough string.
+	- comes back home, builds a small hut with a ladder.
+	- also builds a bow with the found string.
 
-	upgrades boat. builds a new weapon.
+upgrades boat. builds a new weapon.
 
-	boat starts to sail:
-		- flag goes up. sails rolls out. kayak spades slide out from sides.
-		- friendly bots jumping into boat
-		- boat horn sound
-		- music starts
-		- dolphins chase by its side
+boat starts to sail:
+	- flag goes up. sails rolls out. kayak spades slide out from sides.
+	- friendly bots jumping into boat
+	- boat horn sound
+	- music starts
+	- dolphins chase by its side
 
 
-	*ideas*
-	- rope-pully animation for raising/lowering sail anims
-	- a mission to go at night while zombies sleeping: first small bboat upto a certain distance,
-	  then swim the rest, and then player nust sneak not o to wake mass. 
-*/
-}
+*ideas*
+- rope-pully animation for raising/lowering sail anims
+- a mission to go at night while zombies sleeping: first small bboat upto a certain distance,
+	then swim the rest, and then player nust sneak not o to wake mass. 

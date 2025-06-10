@@ -25,19 +25,19 @@ public class UIManager2 : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (_captureMouse && Input.GetKeyDown(KeyCode.Escape))
         {
-            if (_captureMouse)
+            if (Cursor.lockState == CursorLockMode.None)
             {
                 Cursor.lockState = CursorLockMode.Locked;  // Locks to center
                 Cursor.visible = false;
-                _captureMouse = false;
+                //_captureMouse = false;
             }
             else
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                _captureMouse = true;
+                //_captureMouse = true;
             }
         }
     }

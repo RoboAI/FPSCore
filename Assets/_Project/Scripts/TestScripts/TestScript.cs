@@ -5,6 +5,9 @@ public class TestScript : MonoBehaviour
     public GameObject radar;
     bool _active;
 
+    [SerializeField] Transform _raycastPosition;
+    [SerializeField] float _groundDistance;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,9 +17,15 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        //DetectGround();
+    }
+
+    void DetectGround()
+    {
+        Ray _rayGroundDetector = new Ray(_raycastPosition.position, Vector3.left * 10);
+        Physics.Raycast(_rayGroundDetector, out RaycastHit hitInfo2);
         {
-            gameObject.GetComponent<Renderer>().enabled = false;
+            _groundDistance = hitInfo2.distance;
         }
     }
 }

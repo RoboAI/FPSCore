@@ -228,6 +228,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &45870045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45870046}
+  m_Layer: 0
+  m_Name: CurrentActiveAnimal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &45870046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45870045}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.30968, y: 0, z: -3.31465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &101452048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2540457656474421775, guid: e510a1f548048da43a6458d4f3a5689d,
@@ -251,7 +282,7 @@ PrefabInstance:
     - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
       propertyPath: SelectedEvent
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
@@ -292,7 +323,7 @@ PrefabInstance:
     - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
       propertyPath: Events.Array.data[16].useComponent
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
@@ -313,6 +344,26 @@ PrefabInstance:
         type: 3}
       propertyPath: Events.Array.data[17].multiplier.ConstantValue
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: Events.Array.data[16].ResponseComponent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: Events.Array.data[16].ResponseComponent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: Events.Array.data[16].ResponseComponent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1428642378}
+    - target: {fileID: 2510789336580534493, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: Events.Array.data[16].ResponseComponent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2511292938687589815, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
@@ -337,7 +388,12 @@ PrefabInstance:
     - target: {fileID: 2511292938687589815, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
       propertyPath: SelectedState
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511292938687589815, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: showStateList
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2511292938687589815, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
@@ -348,6 +404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ShowStateInInspector
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511292938687589815, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: states_C.Array.data[2].priority
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2511292938687589815, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
@@ -468,6 +529,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561639994640938943, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: m_Mass
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561639994640938943, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561639994640938943, guid: e510a1f548048da43a6458d4f3a5689d,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3968498764540947672, guid: e510a1f548048da43a6458d4f3a5689d,
         type: 3}
@@ -764,9 +840,9 @@ MonoBehaviour:
           m_StringArgument: Mount
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 360599358}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 1428642378}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -774,7 +850,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   OnEndMounting:
     m_PersistentCalls:
@@ -803,18 +879,6 @@ MonoBehaviour:
           m_StringArgument: Dismount
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 360599372}
-        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
-        m_MethodName: Hello
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 360599358}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Collider, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 876371547}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -830,6 +894,18 @@ MonoBehaviour:
       - m_Target: {fileID: 661454791}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1428642378}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -878,18 +954,6 @@ MonoBehaviour:
           m_StringArgument: Dismount
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 360599358}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 876371547}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -914,6 +978,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1428642378}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnEndDismounting:
     m_PersistentCalls:
       m_Calls:
@@ -929,9 +1005,9 @@ MonoBehaviour:
           m_StringArgument: Mount
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 360599358}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
+      - m_Target: {fileID: 1428642378}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: set_isKinematic
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3031,6 +3107,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 360599372}
   m_SourcePrefab: {fileID: 100100000, guid: 9c48d1fd6bf45244a96eadfdeed449c3, type: 3}
+--- !u!54 &1428642378 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2561639994640938943, guid: e510a1f548048da43a6458d4f3a5689d,
+    type: 3}
+  m_PrefabInstance: {fileID: 185751093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1622295585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3426,3 +3508,4 @@ SceneRoots:
   - {fileID: 2095574744}
   - {fileID: 185751093}
   - {fileID: 847485697}
+  - {fileID: 45870046}

@@ -23,4 +23,9 @@ public class Enemy : MonoBehaviour
     {
 
     }
+
+    public void Hello(Collider col)
+    {
+        col.enabled = false;
+    }
 }

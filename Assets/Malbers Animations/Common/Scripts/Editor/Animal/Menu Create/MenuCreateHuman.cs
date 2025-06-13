@@ -35,6 +35,8 @@ namespace MalbersAnimations.Controller
 
         private static void DoHuman(GameObject gameObject, string path)
         {
+            gameObject.transform.ResetLocal(); //important to reset the transform Local
+
             if (!gameObject.TryGetComponent<Animator>(out var animator))
                 animator = gameObject.AddComponent<Animator>();
 

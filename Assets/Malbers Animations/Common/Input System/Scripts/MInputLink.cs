@@ -173,7 +173,6 @@ namespace MalbersAnimations.InputSystem
         {
             character = GetComponent<ICharacterMove>();     //Get the Animal Controller
             DefaultMap = m_MapButtons[ActiveMapIndex];      //Set the Active BtMap as the Default one IMPORTANT
-            ActiveMActionMap = DefaultMap;    //Set the Active BtMap as the Default one IMPORTANT
         }
 
         /// <summary>Remove the Player Input Component</summary>
@@ -192,6 +191,9 @@ namespace MalbersAnimations.InputSystem
         {
             MInputLinks ??= new();
             MInputLinks.Add(this);                                              //Save the the Animal on the current List
+
+
+            ActiveMActionMap = DefaultMap;    //Set the Active BtMap as the Default one IMPORTANT
 
             FindPlayerInput();
 

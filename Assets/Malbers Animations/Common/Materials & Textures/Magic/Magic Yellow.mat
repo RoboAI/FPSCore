@@ -98,7 +98,7 @@ Material:
     - _ExcludeFromTUAndAA: 0
     - _Metallic: 0
     - _OpaqueCullMode: 2
-    - _QueueControl: 0
+    - _QueueControl: -1
     - _QueueOffset: 0
     - _RayTracing: 0
     - _ReceiveShadows: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 916aafda95ad0fd4bb6f3b651d5047ea
+guid: 6de91880dd4dacb4aa5244cfce3b6902
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,9 +117,9 @@ TextureImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 148877
-  packageName: Animal Controller (Malbers Character Controller)
-  packageVersion: 1.4.9
+  productId: 79902
+  packageName: Horse Animset Pro (Riding System)
+  packageVersion: 4.4.9a
   assetPath: Assets/Malbers Animations/Animal Controller/1 - Demos/-- 01 Main Demos
     --/1 - PlayGround Human (3 - Assasin Creed)/ReflectionProbe-0.exr
-  uploadId: 752028
+  uploadId: 755198

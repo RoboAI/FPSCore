@@ -189,7 +189,7 @@ namespace MalbersAnimations
                 () =>
 
 #if UNITY_2023_2_OR_NEWER
-                //CINEMACHINE 3
+                 //CINEMACHINE 3
                 Brain.WorldUpOverride = UpVector
 #else
                  //CINEMACHINE 2
@@ -504,8 +504,8 @@ namespace MalbersAnimations
             }
         }
 
-        [SerializeField, HideInInspector] bool showUPVector;
 
+        [SerializeField, HideInInspector] bool showUPVector;
 
 #if UNITY_EDITOR
         private void OnValidate()

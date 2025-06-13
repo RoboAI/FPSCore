@@ -150,4 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2cac76295c1af440bed73dbeeee3408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bDisableOnStartup: 1
+  _disableOnStartup: 1

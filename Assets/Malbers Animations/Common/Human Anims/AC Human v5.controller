@@ -243,7 +243,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Equip Projectile  -  [On Enter]'
+  - name: Equip Projectile  -  [On Enter]
     Action: 2
     time: 0
     value: 0
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [6]  -  [On Enter]'
+  - name: Play Effect [6]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 6
@@ -2468,7 +2468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [10]  -  [On Enter]'
+  - name: Stop Effect [10]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 10
@@ -2567,7 +2567,7 @@ MonoBehaviour:
     equip: 1
     aim: 0
     sendInterrupted: 0
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -3013,7 +3013,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -3895,7 +3895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -4666,7 +4666,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -4765,7 +4765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Exit Manager  -  [On Enter]'
+  - name: Exit Manager  -  [On Enter]
     Action: 6
     time: 0
     value: 0
@@ -5882,7 +5882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -5913,7 +5913,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -6342,7 +6342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [3]  -  [On Enter]'
+  - name: Play Effect [3]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 3
@@ -6351,7 +6351,7 @@ MonoBehaviour:
     ExecuteOnExit: 0
     ExitInTransition: 1
     IgnoreInTransition: []
-  - name: 'Stop Effect [3]  -  [On Exit] - [In Transition]'
+  - name: Stop Effect [3]  -  [On Exit] - [In Transition]
     showExecute: 0
     showExitInTransition: 1
     ID: 3
@@ -6399,7 +6399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [4]  -  [On Enter]'
+  - name: Stop Effect [4]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 4
@@ -6408,7 +6408,7 @@ MonoBehaviour:
     ExecuteOnExit: 0
     ExitInTransition: 0
     IgnoreInTransition: []
-  - name: 'Stop Effect [5]  -  [On Enter]'
+  - name: Stop Effect [5]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 5
@@ -6417,7 +6417,7 @@ MonoBehaviour:
     ExecuteOnExit: 0
     ExitInTransition: 0
     IgnoreInTransition: []
-  - name: 'Stop Effect [6]  -  [On Enter]'
+  - name: Stop Effect [6]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 6
@@ -6682,7 +6682,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -8108,7 +8108,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -8214,7 +8214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [2]  -  [On Enter]'
+  - name: Play Effect [2]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 2
@@ -8392,7 +8392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [10]  -  [On Enter]'
+  - name: Stop Effect [10]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 10
@@ -12555,7 +12555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -12570,7 +12570,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -12684,7 +12684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [50]  -  [On Enter]'
+  - name: Stop Effect [50]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 50
@@ -14471,7 +14471,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -15273,7 +15273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [50]  -  [On Enter]'
+  - name: Stop Effect [50]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 50
@@ -15563,12 +15563,6 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: LookAt
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: AimVertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -17779,7 +17773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [5]  -  [On Enter]'
+  - name: Play Effect [5]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 5
@@ -17788,7 +17782,7 @@ MonoBehaviour:
     ExecuteOnExit: 0
     ExitInTransition: 1
     IgnoreInTransition: []
-  - name: 'Stop Effect [5]  -  [On Exit] - [In Transition]'
+  - name: Stop Effect [5]  -  [On Exit] - [In Transition]
     showExecute: 0
     showExitInTransition: 1
     ID: 5
@@ -19850,7 +19844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [2]  -  [On Enter]'
+  - name: Play Effect [2]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 2
@@ -20671,7 +20665,7 @@ MonoBehaviour:
     equip: 1
     aim: 0
     sendInterrupted: 1
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -27504,7 +27498,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -28941,7 +28935,7 @@ MonoBehaviour:
     equip: 1
     aim: 0
     sendInterrupted: 1
-  - name: 'Release Free Hand  -  [On Enter]'
+  - name: Release Free Hand  -  [On Enter]
     Action: 10
     time: 0
     value: 0
@@ -29367,7 +29361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponActions:
-  - name: 'Exit Manager  -  [On Enter]'
+  - name: Exit Manager  -  [On Enter]
     Action: 6
     time: 0
     value: 0
@@ -29375,7 +29369,7 @@ MonoBehaviour:
     equip: 1
     aim: 0
     sendInterrupted: 0
-  - name: 'Activate Manager  -  [On Exit]'
+  - name: Activate Manager  -  [On Exit]
     Action: 6
     time: 1
     value: 0
@@ -29856,7 +29850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [10]  -  [On Enter]'
+  - name: Stop Effect [10]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 10
@@ -30745,7 +30739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [50]  -  [On Enter]'
+  - name: Play Effect [50]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 50
@@ -30754,7 +30748,7 @@ MonoBehaviour:
     ExecuteOnExit: 0
     ExitInTransition: 1
     IgnoreInTransition: []
-  - name: 'Stop Effect [50]  -  [On Exit] - [In Transition]'
+  - name: Stop Effect [50]  -  [On Exit] - [In Transition]
     showExecute: 0
     showExitInTransition: 1
     ID: 50
@@ -33331,7 +33325,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -33678,7 +33672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [6]  -  [On Exit] - [In Transition]'
+  - name: Stop Effect [6]  -  [On Exit] - [In Transition]
     showExecute: 0
     showExitInTransition: 1
     ID: 6
@@ -34034,7 +34028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [10]  -  [On Enter]'
+  - name: Stop Effect [10]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 10
@@ -35598,7 +35592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Play Effect [4]  -  [On Enter]'
+  - name: Play Effect [4]  -  [On Enter]
     showExecute: 0
     showExitInTransition: 0
     ID: 4
@@ -36183,7 +36177,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -37821,7 +37815,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode
@@ -37953,7 +37947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DynamicManagers: 0
   effects:
-  - name: 'Stop Effect [4]  -  [On Exit] - [In Transition]'
+  - name: Stop Effect [4]  -  [On Exit] - [In Transition]
     showExecute: 0
     showExitInTransition: 1
     ID: 4
@@ -39852,7 +39846,7 @@ AnimatorStateTransition:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Interrupted [N]'
+  m_Name: Interrupted [N]
   m_Conditions:
   - m_ConditionMode: 7
     m_ConditionEvent: Mode

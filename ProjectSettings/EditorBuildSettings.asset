@@ -5,6 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Malbers Animations/Horse AnimSet Pro/1 - Demos/2 - HAP Riding Combat
+      1 (Holsters).unity
+    guid: d64a1adf643add443af4477500ff4c36
   - enabled: 1
     path: Assets/_Project/Scenes/ACTutorial.unity
     guid: cff9668385a110149b689ab8d4642942

@@ -2,6 +2,8 @@
 - player is in a town, is bullied and no proper friends. heads out on a hot air balloon trip alone.
   encounters a portal, goes into it unintentionally.
 - zombie pirates taken over towns. player tries to survive and decides to save ppl too.
+
+scenario 1:
 - player starts to build boat, upgrades boat to ship as they progress etc.
 - player goes into battle with zombies. saves a few ppl. gets resources to upgrade ship.
 - later realises that the zombies are not willing to kill hostages. player finds out how to cure them with a potion,
@@ -9,6 +11,12 @@
 - hot air balloons passes by, can be shot down for air packages
 - player has a companion eagle, used as radar. bird will call direciton for main boss (every 2 seconds for 10seconds maybe):
 	north 1 call, east 2 quick-calls, etc
+
+scenario 2:
+- there are 5 portables in the town:
+   - 1. player goes through it in the sky via a hot-air balloon
+     2. one is in the water
+	 3. one is in
 
 //future upgrades
 - hot air baloon passes by carrying tourists, baloon gets shot down (no one knows who but we see an arrow pierce it),

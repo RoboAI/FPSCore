@@ -1501,7 +1501,7 @@ MonoBehaviour:
   animator: {fileID: 360599360}
   m_rigidBody: {fileID: 360599359}
   m_root: {fileID: 360599361}
-  Editor_Tabs1: 0
+  Editor_Tabs1: 1
   EditOffsetReinLeft: 0
   EditOffsetReinRight: 0
 --- !u!136 &360599358 stripped

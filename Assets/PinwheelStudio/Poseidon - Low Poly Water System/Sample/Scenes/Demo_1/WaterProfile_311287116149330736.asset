@@ -185,7 +185,7 @@ MonoBehaviour:
   smoothness: 0.751
   enableLightAbsorption: 1
   depthColor: {r: 0.6230331, g: 0.76182914, b: 0.8113208, a: 1}
-  maxDepth: 29.77
+  maxDepth: 9.7
   enableFoam: 1
   foamColor: {r: 1, g: 1, b: 1, a: 1}
   foamDistance: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
   foamNoiseScaleHQ: 1
   foamNoiseSpeedHQ: 1
   shorelineFoamStrength: 0.33
-  crestFoamStrength: 0.122
+  crestFoamStrength: 0
   crestMaxDepth: 15
   slopeFoamStrength: 0
   slopeFoamFlowSpeed: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   rippleHeight: 0.301
   rippleSpeed: 5
   rippleNoiseScale: 1
-  enableWave: 0
+  enableWave: 1
   waveDirection: 145.2
   waveSpeed: 1.7
   waveHeight: 0.5
@@ -209,7 +209,7 @@ MonoBehaviour:
   waveSteepness: 0.631
   waveDeform: 1
   fresnelStrength: 10
-  fresnelBias: 0
+  fresnelBias: 1
   enableReflection: 0
   reflectionTextureResolution: 128
   enableReflectionPixelLight: 0

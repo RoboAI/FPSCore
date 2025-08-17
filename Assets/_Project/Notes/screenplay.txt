@@ -1,9 +1,8 @@
 
+scenario 1:
 - player is in a town, is bullied and no proper friends. heads out on a hot air balloon trip alone.
   encounters a portal, goes into it unintentionally.
 - zombie pirates taken over towns. player tries to survive and decides to save ppl too.
-
-scenario 1:
 - player starts to build boat, upgrades boat to ship as they progress etc.
 - player goes into battle with zombies. saves a few ppl. gets resources to upgrade ship.
 - later realises that the zombies are not willing to kill hostages. player finds out how to cure them with a potion,
@@ -13,10 +12,13 @@ scenario 1:
 	north 1 call, east 2 quick-calls, etc
 
 scenario 2:
-- there are 5 portables in the town:
+- there are 5 portables in the town. player discovers each portal via a map; with different clues of where it is:
    - 1. player goes through it in the sky via a hot-air balloon
-     2. one is in the water
-	 3. one is in
+     2. other is in the water
+	 3. one is in forest
+	 4. one is in a shop
+	 5. final one is in kings castle
+- each portal unfolds a mystery about who caused all of this
 
 //future upgrades
 - hot air baloon passes by carrying tourists, baloon gets shot down (no one knows who but we see an arrow pierce it),

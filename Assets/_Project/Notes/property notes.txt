@@ -1,2 +1,4 @@
 Dome: 0.37 for early morning
 	  0.67 for purple haze night
+
+water: Foam Strength=0 for night time
